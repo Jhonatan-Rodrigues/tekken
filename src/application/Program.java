@@ -1,14 +1,10 @@
 package application;
 
 import entities.match.Fight;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Program {
 
-    List<String> list = new ArrayList<>();
 
     public static void main(String[] args) {
 
