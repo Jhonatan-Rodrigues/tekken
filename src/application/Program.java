@@ -1,6 +1,9 @@
 package application;
 
+import entities.characters.EddyGordon;
+import entities.characters.Heihachi;
 import entities.match.Fight;
+
 import java.util.Scanner;
 
 public class Program {
@@ -15,11 +18,13 @@ public class Program {
         System.out.println("Choose the duration of you battle");
         String time = sc.nextLine();
         Fight fight1 = new Fight(local, time);
+        fight1.apresentFight();
 
-        Fight.apresentFight();
-        fight1.chooseYourFighter();
+        fight1.battle(new EddyGordon(), new Heihachi());
 
-        System.out.println("\nThe most overral is the winner, What a power!!!");
+
+
+
 
 
     }

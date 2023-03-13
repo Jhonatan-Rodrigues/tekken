@@ -1,6 +1,6 @@
 package entities.characters;
 
-public class Heihachi {
+public class Heihachi extends Fighters{
     private String name = "Heihachi";
     private Integer hp = 2800;
     private Integer power = 4300;
@@ -64,7 +64,7 @@ public class Heihachi {
 
     @Override
     public String toString() {
-        return "name: " + name + '\'' +
+        return "The destroyer: " + name + '\'' +
                 ", hp: " + hp +
                 ", power: " + power +
                 ", magic: " + magic +

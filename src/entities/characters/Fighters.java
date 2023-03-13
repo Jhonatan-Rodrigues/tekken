@@ -1,28 +1,13 @@
 package entities.characters;
 
-public class Law extends Fighters{
+public abstract class Fighters{
 
-
-    private String name = "Law";
-    private Integer hp = 3200;
-    private Integer power = 4300;
-    private Integer magic = 300;
-    private Integer damageSpecial = 4800;
-
-    private Integer overral = 92;
-
-
-    public Law() {
-
-    }
-
-    public Integer getOverral() {
-        return overral;
-    }
-
-    public void setOverral(Integer overral) {
-        this.overral = overral;
-    }
+    private String name;
+    private Integer hp ;
+    private Integer power;
+    private Integer magic;
+    private Integer damageSpecial;
+    private Integer overral;
 
     public String getName() {
         return name;
@@ -64,13 +49,11 @@ public class Law extends Fighters{
         this.damageSpecial = damageSpecial;
     }
 
-    @Override
-    public String toString() {
-        return "The master of martial arts " + name + '\'' +
-                ", hp: " + hp +
-                ", power: " + power +
-                ", magic: " + magic +
-                ", damageSpecial: " + damageSpecial +
-                ", overral: " + overral;
+    public Integer getOverral() {
+        return overral;
+    }
+
+    public void setOverral(Integer overral) {
+        this.overral = overral;
     }
 }

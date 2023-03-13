@@ -1,7 +1,7 @@
 package entities.characters;
 
 
-public class JinKazama {
+public class JinKazama extends Fighters{
 
 
     private String name = "Jin Kazama";
@@ -66,7 +66,7 @@ public class JinKazama {
 
     @Override
     public String toString() {
-        return "name : " + name + '\'' +
+        return "The prodige : " + name + '\'' +
                 ", hp: " + hp +
                 ", power: " + power +
                 ", magic: " + magic +

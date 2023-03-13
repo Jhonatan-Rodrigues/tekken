@@ -1,19 +1,19 @@
 package entities.characters;
 
-public class EddyGordon {
+public class EddyGordon extends Fighters{
 
     private String name = "Eddy gordon";
     private Integer hp = 2000;
     private Integer power = 2800;
     private Integer magic = 180;
     private Integer damageSpecial = 2700;
-    private int overral = 93;
+    private Integer overral = 93;
 
     public EddyGordon() {
 
     }
 
-    public int getOverral() {
+    public Integer getOverral() {
         return overral;
     }
 
@@ -65,7 +65,7 @@ public class EddyGordon {
 
     @Override
     public String toString() {
-        return "name: " + name + '\'' +
+        return "The legend of Brazil: " + name + '\'' +
                 ", hp: " + hp +
                 ", power: " + power +
                 ", magic: " + magic +
